@@ -10,6 +10,8 @@ This project is to explore ways to use neural networks to do image classificatio
 
 ## Data Analysis
 
+The data set contains % images with % dogs and % cats.
+The data will is split randomly to have % images for training and % images for testing.
 
 ## Convolutional Neural Network (CNN) Classifier
 #### Dependencies
