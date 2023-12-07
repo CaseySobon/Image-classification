@@ -1,7 +1,7 @@
 
 # Image-Classification
 ## Overview
-This project is to explore ways to use neural networks to do image classification. I am using a dataset that has images of cats and dogs and will find the best method to classify them. There will be a convolutional neural network I will design myself to see how well I can do it. Then will try the available pre-trained models.
+This project employs neural networks for image classification using a dataset featuring cats and dogs. Designing a custom convolutional neural network for optimal classification and evaluating pre-trained models for comparison.
 
 ## Folder Structure
 * cnn_classifier/: Contains the code for the CNN-based image classifier.
