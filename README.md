@@ -12,8 +12,8 @@ This project employs neural networks for image classification using a dataset fe
 
 ## Data Analysis
 
-The data set contains % images with % dogs and % cats.
-The data will is split randomly to have % images for training and % images for testing.
+The data set contains 25000 images with 12500 dogs and 12500 cats.
+The data will split randomly to have 20000 images for training and 5000 images for validation.
 
 ## Convolutional Neural Network (CNN) Classifier
 #### Dependencies
@@ -23,11 +23,29 @@ The data will is split randomly to have % images for training and % images for t
 * Matplotlib
 * NumPy
 
-#### Usage
-* Navigate to the cnn_classifier/ directory.
-* Install dependencies using pip install -r requirements.txt.
-* Run python train_cnn.py to train the CNN on the provided dataset.
-* After training, use python predict_cnn.py --image <path_to_image> to classify a new image.
+### 1. Data Preparation:
+* The code starts by mounting Google Drive to access data files stored there.
+* It unzips two sets of images, one for training (train.zip) and one for testing (test1.zip).
+* The training images are organized into folders for dogs and cats.
+* The code uses the ImageDataGenerator from Keras to perform real-time data augmentation and normalization on the training data. It rescales pixel values to the range [0, 1].
+* The data generators are created for both training and validation sets.
+2. Neural Network Model:
+The neural network model is defined using the Sequential API from Keras.
+It consists of convolutional layers with max pooling, followed by fully connected layers.
+The activation function used is ReLU for convolutional layers and sigmoid for the output layer.
+Dropout layers are added to reduce overfitting.
+3. Model Compilation:
+The model is compiled using the Adam optimizer and binary cross-entropy loss, as it's a binary classification problem.
+The accuracy metric is used to monitor the model's performance during training.
+4. Model Training:
+The model is trained using the fit method with the training and validation data generators.
+Training progress is printed out for each epoch, showing training and validation loss and accuracy.
+5. Model Evaluation and Visualization:
+The code visualizes the model architecture using plot_model.
+The training history is plotted, showing training and validation accuracy and loss over epochs.
+6. Model Testing:
+Another set of images (test set) is prepared using an ImageDataGenerator.
+The trained model is used to make predictions on the test set.
 
 ## Pre-trained Models
 #### Dependencies
