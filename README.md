@@ -6,9 +6,9 @@ This project employs neural networks for image classification using a dataset fe
 ## Folder Structure
 * [ml/pc/exercises:](https://github.com/CaseySobon/Image-classification/tree/main/ml/pc/exercises) This folder has some useful resources used for the project.
 * [Cat_vs_dog_CNN.ipynb:](https://github.com/CaseySobon/Image-classification/blob/main/Cat_vs_dog_CNN.ipynb) This file is the self-trained neural network.
-* Cat_vs_dog_resnet50.ipynb: This file is the test of the pre-trained model Resnet50
-* Cat_vs_dog_selftrained_VGG16.ipynb: This file is the test for the pre-trained model VGG16.
-* DL_Project_3_Dog_vs_Cat_Classification_Transfer_Learning.ipynb: This file is the test for transfer learning.
+* [Cat_vs_dog_resnet50.ipynb:](https://github.com/CaseySobon/Image-classification/blob/main/Cat_vs_dog_resnet50.ipynb) This file is the test of the pre-trained model Resnet50
+* [Cat_vs_dog_selftrained_VGG16.ipynb:](https://github.com/CaseySobon/Image-classification/blob/main/Cat_vs_dog_selftrained_VGG16.ipynb) This file is the test for the pre-trained model VGG16.
+* [DL_Project_3_Dog_vs_Cat_Classification_Transfer_Learning.ipynb:](https://github.com/CaseySobon/Image-classification/blob/main/Cat_vs_dog_selftrained_VGG16.ipynb) This file is the test for transfer learning.
 
 ## Data Analysis
 
