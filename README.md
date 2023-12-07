@@ -59,7 +59,9 @@ The data will split randomly to have 20000 images for training and 5000 images f
 5. Model Evaluation and Visualization:
 * The code visualizes the model architecture using plot_model.
 * The training history is plotted, showing training and validation accuracy and loss over epochs.
-![plot1](https://github.com/CaseySobon/Image-classification/assets/96227583/c15d3cbe-cb5e-4ec4-a5c5-9fae12812719)
+
+<img src=(https://github.com/CaseySobon/Image-classification/assets/96227583/c15d3cbe-cb5e-4ec4-a5c5-9fae12812719 width="100">
+
 #### 6. Model Testing:
 * Another set of images (test set) is prepared using an ImageDataGenerator.
 * The trained model is used to make predictions on the test set.
@@ -82,7 +84,8 @@ The data will split randomly to have 20000 images for training and 5000 images f
 6. Train the Model
 7. Evaluate and Visualize
 
-<img src=(https://github.com/CaseySobon/Image-classification/assets/96227583/70076607-eb31-433e-9f62-7b841da36bde width="300">
+<img src=(https://github.com/CaseySobon/Image-classification/assets/96227583/70076607-eb31-433e-9f62-7b841da36bde width="100">
+
 8. Test the Model
 #### Implementing Pre-trained VGG16
 This is done in the same way as before but with the necessary libraries.
@@ -92,7 +95,9 @@ This is done in the same way as before but with the necessary libraries.
   * ....
 6. ....
 7. Then Evaluate and Visualize
-![plot3](https://github.com/CaseySobon/Image-classification/assets/96227583/e12807af-a5b7-463d-8d5c-bf06b010fc10)
+
+<img src=https://github.com/CaseySobon/Image-classification/assets/96227583/e12807af-a5b7-463d-8d5c-bf06b010fc10 width="300">
+
 8. Test the Model
 
 
