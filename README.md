@@ -23,17 +23,33 @@ The data will split randomly to have 20000 images for training and 5000 images f
 * Matplotlib
 * NumPy
 
-### 1. Data Preparation:
+#### 1. Data Preparation:
 * The code starts by mounting Google Drive to access data files stored there.
 * It unzips two sets of images, one for training (train.zip) and one for testing (test1.zip).
 * The training images are organized into folders for dogs and cats.
 * The code uses the ImageDataGenerator from Keras to perform real-time data augmentation and normalization on the training data. It rescales pixel values to the range [0, 1].
 * The data generators are created for both training and validation sets.
-2. Neural Network Model:
-The neural network model is defined using the Sequential API from Keras.
-It consists of convolutional layers with max pooling, followed by fully connected layers.
-The activation function used is ReLU for convolutional layers and sigmoid for the output layer.
-Dropout layers are added to reduce overfitting.
+#### 2. Neural Network Model:
+* The neural network model is defined using the Sequential API from Keras.
+* It consists of convolutional layers with max pooling, followed by fully connected layers.
+* The neural network model defined in the code has the following layers:
+  1. Conv2D Layer 1: 32 filters, kernel size 3x3, 'same' padding, ReLU activation.
+  2. Conv2D Layer 2: 32 filters, kernel size 3x3, 'same' padding, ReLU activation.
+  3. MaxPooling2D Layer 1: Max pooling with default 2x2 pool size.
+  4. Conv2D Layer 3: 64 filters, kernel size 3x3, 'same' padding, ReLU activation.
+  5. Conv2D Layer 4: 64 filters, kernel size 3x3, 'same' padding, ReLU activation.
+  6. MaxPooling2D Layer 2: Max pooling with default 2x2 pool size.
+  7. Conv2D Layer 5: 128 filters, kernel size 3x3, 'same' padding, ReLU activation.
+  8. Conv2D Layer 6: 128 filters, kernel size 3x3, 'same' padding, ReLU activation.
+  9. MaxPooling2D Layer 3: Max pooling with default 2x2 pool size.
+  10. Flatten Layer: Flattens the input.
+  11. Dense Layer 1: 256 units, ReLU activation.
+  12. Dropout Layer 1: Dropout with a rate of 0.5.
+  13. Dense Layer 2: 256 units, ReLU activation.
+  14. Dropout Layer 2: Dropout with a rate of 0.5.
+  16. Dense Output Layer: 1 unit with a sigmoid activation function.
+*The activation function used is ReLU for convolutional layers and sigmoid for the output layer.
+* Dropout layers are added to reduce overfitting.
 3. Model Compilation:
 The model is compiled using the Adam optimizer and binary cross-entropy loss, as it's a binary classification problem.
 The accuracy metric is used to monitor the model's performance during training.
