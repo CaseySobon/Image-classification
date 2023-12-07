@@ -81,7 +81,8 @@ The data will split randomly to have 20000 images for training and 5000 images f
 5. Compile the Model
 6. Train the Model
 7. Evaluate and Visualize
-![plot2](https://github.com/CaseySobon/Image-classification/assets/96227583/70076607-eb31-433e-9f62-7b841da36bde)
+
+<img src=(https://github.com/CaseySobon/Image-classification/assets/96227583/70076607-eb31-433e-9f62-7b841da36bde width="300">
 8. Test the Model
 #### Implementing Pre-trained VGG16
 This is done in the same way as before but with the necessary libraries.
