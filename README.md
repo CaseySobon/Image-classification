@@ -4,9 +4,11 @@
 This project employs neural networks for image classification using a dataset featuring cats and dogs. Designing a custom convolutional neural network for optimal classification and evaluating pre-trained models for comparison.
 
 ## Folder Structure
-* cnn_classifier/: Contains the code for the CNN-based image classifier.
-* pretrained_models/: Includes scripts to utilize pre-trained models for image classification.
-
+* ml/pc/exercises: This folder has some useful resources used for the project.
+* Cat_vs_dog_CNN.ipynb: This file is the self-trained neural network.
+* Cat_vs_dog_resnet50.ipynb: This file is the test of the pre-trained model Resnet50
+* Cat_vs_dog_selftrained_VGG16.ipynb: This file is the test for the pre-trained model VGG16.
+* DL_Project_3_Dog_vs_Cat_Classification_Transfer_Learning.ipynb: This file is the test for transfer learning.
 
 ## Data Analysis
 
