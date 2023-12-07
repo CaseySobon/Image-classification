@@ -71,13 +71,34 @@ The data will split randomly to have 20000 images for training and 5000 images f
 * Keras
 * Matplotlib
 * NumPy
+#### Implementing Pre-trained ResNet50
+1. Import Necessary Libraries
+  * from keras.applications import ResNet50
+  * from keras.applications.resnet50 import preprocess_input
+2. Load Pre-trained ResNet50 Model
+3. Freeze Pre-trained Layers
+4. Recreate a New Model
+5. Compile the Model
+6. Train the Model
+7. Evaluate and Visualize
+![plot2](https://github.com/CaseySobon/Image-classification/assets/96227583/70076607-eb31-433e-9f62-7b841da36bde)
+8. Test the Model
+#### Implementing Pre-trained VGG16
+This is done in the same way as before but with the necessary libraries.
+1. Import Necessary Libraries
+  * from keras.applications import VGG16
+  * from keras.applications.VGG16 import preprocess_input
+  * ....
+6. ....
+7. Then Evaluate and Visualize
+![plot3](https://github.com/CaseySobon/Image-classification/assets/96227583/e12807af-a5b7-463d-8d5c-bf06b010fc10)
+8. Test the Model
 
-#### Usage
-* Navigate to the pretrained_models/ directory.
-* Install dependencies using pip install -r requirements.txt.
-* Run python predict_pretrained.py --image <path_to_image> to use a pre-trained model for image classification.
 
-#### Available Pre-trained Models
-* VGG16
-* ResNet50
-* MobileNetV2
+
+
+
+
+
+
+
